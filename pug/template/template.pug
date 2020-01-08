@@ -1,0 +1,47 @@
+include ../config/config.pug
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/style.css")
+        title Chapas
+    body
+        header
+            .logo
+                img(src="img/logo1.jpg")
+            h1 Chapitas S.L.
+            nav
+                block navegador
+                        
+        section
+            .imagenGrande
+                block imagen
+            article
+                block articulo
+
+        footer
+            .logo
+                img(src="img/logo1.jpg")
+            .info
+                p.
+                    Informacion
+                nav
+                    a(href="").
+                        Facebook
+                    a(href="").
+                        Twitter
+                    a(href="").
+                        Gmail
+            .redes
+                p.
+                    Redes sociales
+                nav
+                    a(href="").
+                        Aviso Legal
+                    a(href="").
+                        Instrucciones para pedidos
+                    a(href="").
+                        Contactos
+                    
