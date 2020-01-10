@@ -2,7 +2,7 @@
 
 
 body{
-	width: 80%;
+	width: 100%;
 	margin-right: auto;
     margin-left: auto;
 	background:lightblue;
@@ -15,6 +15,9 @@ header{
 	text-align: center;
 	.logo{
 		background-color: green;
+		display:flex;
+		justify-content: center;
+		align-items: center;
 		img {
 			width: 10%;
 		}
@@ -23,7 +26,17 @@ header{
 		padding: 10px;
 	}
 }
-
+.descripcion{
+	.imagen{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5%;
+		p{
+			width: 70%;
+		}
+	}
+}
 
 
 
@@ -43,7 +56,7 @@ footer{
 	}
 	a{
 		display: block;
-		color: green;
+		color: grey;
 		font-weight: bold;
 		padding: 10px;
 	}
