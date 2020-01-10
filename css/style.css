@@ -1,46 +1,43 @@
 body {
-  width: 100%;
+  background: #4EFBBC;
+  color: #1A1A1A;
   margin-right: auto;
   margin-left: auto;
-  background: lightblue;
-  color: blue; }
+  width: 100%; }
 
 header {
-  width: 100%;
-  height: 200px;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   header .logo {
-    background-color: green;
+    align-items: center;
+    background-image: url("../img/banner-chapas.jpg");
+    background-size: contain;
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    header .logo img {
-      width: 10%; }
+    height: 200px;
+    justify-content: center; }
   header nav a {
     padding: 10px; }
 
 .descripcion .imagen {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 5%; }
   .descripcion .imagen p {
     width: 70%; }
 
 footer {
-  background-color: green;
-  width: 100%;
-  color: grey;
-  font-weight: bold;
+  background-color: #4EFBBC;
+  color: #1A1A1A;
   display: flex;
-  justify-content: space-around; }
-  footer .logo {
-    background-color: green; }
-    footer .logo img {
-      width: 200px;
-      height: 200px; }
+  justify-content: space-around;
+  font-weight: bold;
+  width: 100%; }
+  footer img {
+    height: 200px;
+    width: 200px; }
   footer a {
     display: block;
-    color: grey;
+    color: #1A1A1A;
     font-weight: bold;
     padding: 10px; }
