@@ -7,16 +7,21 @@ body {
 
 header {
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 5%; }
   header .logo {
     align-items: center;
     background-image: url("../img/banner-chapas.jpg");
     background-size: contain;
     display: flex;
-    height: 200px;
+    height: 100px;
     justify-content: center; }
-  header nav a {
-    padding: 10px; }
+  header .navegador {
+    width: 100%;
+    background-color: grey; }
+    header .navegador a {
+      color: #1A1A1A;
+      padding: 10px; }
 
 .descripcion .imagen {
   align-items: center;
