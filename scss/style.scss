@@ -1,4 +1,5 @@
 @import "componentes/variables";
+@import "../css/iconos.css";
 
 /* Comentarios acerca del CSS
 - Todas las etiquetas están ordenadas por orden alfabético
@@ -68,23 +69,40 @@ header{
 }
 
 footer{
-	background-color: $fondo--color;
+	background-color: $navegador__fondo--color;
 	color:$letras--color;
 	display: flex;
 	justify-content: space-around;
 	font-weight: bold;
 	width: 100%;
+	border-top: 1px solid;
 	img {
 		height: 200px;
 		width: 200px;
 	}
+	p{
+		color: white;
+	}
 	a{
 		color:$letras--color;
-		display: block;
 		font-weight: bold;
 		padding: 10px;
+		text-decoration: none;
 	}
 }
+.info{
+	a{
+		display: block;
+		color: white;
+	}
+}
+.redes{
+	a{
+		font-size: 1.5em;
+		color: white;
+	}
+}
+
 section{
 	
 	display: flex;
