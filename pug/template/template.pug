@@ -10,15 +10,21 @@ html(lang="en")
     body
         header
             .logo
-                img(src="img/logo1.jpg")
                 h1 Chapitas S.L.
-            nav
-                block navegador
+            nav.navegador
+                a(href="index.html").
+                    Inicio
+                a(href="chapas.html").
+                    Chapas
+                a(href="precios.html").
+                    Precios
+                a(href="contacto.html").
+                    Contactos
                         
         section
             block banner
-            article
-                block articulo
+            block articulo
+            block catalogo
 
         footer
             .logo
@@ -28,19 +34,19 @@ html(lang="en")
                     Informacion
                 nav
                     a(href="").
-                        Facebook
-                    a(href="").
-                        Twitter
-                    a(href="").
-                        Gmail
-            .redes
-                p.
-                    Redes sociales
-                nav
-                    a(href="").
                         Aviso Legal
                     a(href="").
                         Instrucciones para pedidos
                     a(href="").
                         Contactos
+            .redes
+                p.
+                    Redes sociales
+                nav
+                    a(href="index.html").
+                        Facebook
+                    a(href="").
+                        Twitter
+                    a(href="").
+                        Gmail
                     

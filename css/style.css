@@ -1,49 +1,69 @@
+@charset "UTF-8";
+/* Comentarios acerca del CSS
+- Todas las etiquetas están ordenadas por orden alfabético
+*/
 body {
-  width: 100%;
+  background: #ffffff;
+  color: #1A1A1A;
   margin-right: auto;
+  margin-left: auto; }
+
+.catalogo h2 {
+  border: black solid 2px;
+  border-radius: 5px;
   margin-left: auto;
-  background: lightblue;
-  color: #1A1A1A; }
+  margin-right: auto;
+  text-align: center;
+  width: 20%; }
 
 header {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  border-bottom: 1px black solid; }
-  header .logo {
-    background-color: green;
-    border-bottom: 1px black solid;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header .logo img {
-      width: 10%; }
-  header nav a {
-    padding: 10px; }
+  text-align: center; }
 
-.descripcion .imagen {
+.imagen {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 5%; }
-  .descripcion .imagen p {
+  .imagen p {
     width: 70%; }
 
-footer {
-  background-color: green;
-  width: 100%;
-  color: grey;
-  font-weight: bold;
+.logo {
+  align-items: center;
+  background-image: url("../img/banner-chapas.jpg");
+  background-size: contain;
   display: flex;
-  justify-content: space-around; }
-  footer .logo {
-    background-color: green; }
-    footer .logo img {
-      width: 200px;
-      height: 200px; }
+  height: 100px;
+  justify-content: center; }
+
+.navegador {
+  width: 100%;
+  background-color: #9c9c9c;
+  border-bottom: 1px black solid; }
+  .navegador a {
+    color: #1A1A1A;
+    padding: 10px; }
+
+.tipo {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly; }
+  .tipo p {
+    text-align: left;
+    width: 200px; }
+
+footer {
+  background-color: #ffffff;
+  color: #1A1A1A;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  width: 100%; }
+  footer img {
+    height: 200px;
+    width: 200px; }
   footer a {
+    color: #1A1A1A;
     display: block;
-    color: grey;
     font-weight: bold;
     padding: 10px; }
 
@@ -52,15 +72,17 @@ section {
   flex-direction: column; }
   section h2 {
     text-align: center; }
-  section .imgn {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-content: center; }
   section img {
     width: 200px;
     height: 200px; }
-  section .imgybt {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+
+.mostrador {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center; }
+
+.imgybt {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

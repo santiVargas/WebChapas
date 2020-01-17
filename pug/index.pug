@@ -1,43 +1,33 @@
 extends template/template.pug
-block navegador
-    a(href="index.html").
-        Inicio
-    a(href="crea.html").
-        Chapas
-    a(href="compra.html").
-        Precios
-    a(href="contacto.html").
-        Contactos
 
 block banner
     h2 Personalizables y diseños predeterminados
-    .imgn
+    .mostrador
         .imgybt
             img(src="img/chaparedonda.jpg", alt="Chapa Redonda")
             button(href="chapas.html/#redondas") Informate sobre nuestras chapas redondas
         .imgybt
             img(src="img/chapacuadrada.jpeg", alt="Chapa Cuadrada")
-            button(href="chapas.html/#cuadradas") Informate sobre nuestras chapas redondas
+            button(href="chapas.html/#cuadradas") Informate sobre nuestras chapas cuadradas
         .imgybt
             img(src="img/chapatriangular.jpeg", alt="Chapa Triangular")
-            button(href="chapas.html/#triangulares") Informate sobre nuestras chapas redondas
+            button(href="chapas.html/#triangulares") Informate sobre nuestras chapas triangulares
         
 
 block articulo
-    div
-        p.
-            Aqui va el mostrador
-        .descripcion
-            .imagen
-                img(src="img/chapa.png")
-                p.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
-            .imagen
-                img(src="img/chapa.png")
-                p.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
-            .imagen
-                img(src="img/chapa.png")
-                p.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
+    article
+        div
+            .descripcion
+                .imagen
+                    img(src="img/chapa.png")
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
+                .imagen
+                    img(src="img/chapa.png")
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
+                .imagen
+                    img(src="img/chapa.png")
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
             
