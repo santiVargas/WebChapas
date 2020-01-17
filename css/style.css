@@ -17,44 +17,6 @@ body {
   text-align: center;
   width: 20%; }
 
-header {
-  text-align: center; }
-
-.imagen {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 5%; }
-  .imagen p {
-    width: 70%; }
-
-.logo {
-  align-items: center;
-  background-image: url("../img/banner-chapas.jpg");
-  background-size: contain;
-  display: flex;
-  height: 100px;
-  justify-content: center; }
-
-.navegador {
-  background-color: #9c9c9c;
-  padding: 1em;
-  border-bottom: 1px black solid; }
-  .navegador a {
-    padding: 1em;
-    color: #1A1A1A;
-    text-decoration: none; }
-    .navegador a:hover {
-      background-color: white; }
-
-.tipo {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly; }
-  .tipo p {
-    text-align: left;
-    width: 200px; }
-
 footer {
   background-color: #9c9c9c;
   color: #1A1A1A;
@@ -74,9 +36,66 @@ footer {
     padding: 10px;
     text-decoration: none; }
 
+header {
+  text-align: center; }
+
 .info a {
   display: block;
   color: white; }
+
+.imagen {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%; }
+  .imagen p {
+    width: 70%; }
+
+.imagenPrecio {
+  display: flex;
+  justify-content: space-between; }
+
+.imgybt {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.logo {
+  align-items: center;
+  background-image: url("../img/banner-chapas.jpg");
+  background-size: contain;
+  display: flex;
+  height: 100px;
+  justify-content: center; }
+
+.mostrador {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center; }
+
+.navegador {
+  background-color: #9c9c9c;
+  padding: 1em;
+  border-bottom: 1px black solid; }
+  .navegador a {
+    padding: 1em;
+    color: #1A1A1A;
+    text-decoration: none; }
+    .navegador a:hover {
+      background-color: white; }
+
+.partederecha {
+  margin-right: 20%; }
+  .partederecha img {
+    width: 500px;
+    height: 250px; }
+
+.parteizq h2 {
+  font-size: 1.2em; }
+
+.parteizq li {
+  margin-left: 2em; }
 
 .redes a {
   font-size: 1.5em;
@@ -91,29 +110,10 @@ section {
     width: 200px;
     height: 200px; }
 
-.mostrador {
+.tipo {
+  align-items: center;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-content: center; }
-
-.imgybt {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.parteizq h2 {
-  font-size: 1.2em; }
-
-.parteizq li {
-  margin-left: 2em; }
-
-.partederecha {
-  margin-right: 20%; }
-  .partederecha img {
-    width: 500px;
-    height: 250px; }
-
-.imagenPrecio {
-  display: flex;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
+  .tipo p {
+    text-align: left;
+    width: 200px; }

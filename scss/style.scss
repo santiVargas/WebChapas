@@ -23,53 +23,6 @@ body{
 	}
 }
 
-header{
-	text-align: center;
-
-}
-
-.imagen{
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	padding: 5%;
-	p{
-		width: 70%;
-	}
-}
-
-.logo{
-	align-items: center;
-	background-image: url("../img/banner-chapas.jpg");
-	background-size: contain;
-	display: flex;
-	height: 100px;
-	justify-content: center;
-}
-
-.navegador{
-	background-color: $navegador__fondo--color;
-	padding:1em;
-	a{
-		padding:1em;
-		color:$letras--color;
-		text-decoration: none;
-		&:hover{
-			background-color: white;
-		}
-	}
-	border-bottom:1px black solid ;
-}
-
-.tipo{
-	align-items: center;
-	display: flex;
-	justify-content: space-evenly;
-	p{
-		text-align: left;
-		width: 200px;
-	}
-}
 
 footer{
 	background-color: $navegador__fondo--color;
@@ -93,32 +46,48 @@ footer{
 		text-decoration: none;
 	}
 }
+
+header{
+	text-align: center;
+
+}
+
 .info{
 	a{
 		display: block;
 		color: white;
 	}
 }
-.redes{
-	a{
-		font-size: 1.5em;
-		color: white;
+
+.imagen{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 5%;
+	p{
+		width: 70%;
 	}
 }
 
-section{
-	
+.imagenPrecio{
+	display: flex;
+	justify-content: space-between;
+}
+
+.imgybt{
 	display: flex;
 	flex-direction: column;
-	h2{
-		text-align: center;
-	}
+	align-items: center;
+}
 
-	img{
-		width: 200px;
-		height: 200px;
-	}
 
+.logo{
+	align-items: center;
+	background-image: url("../img/banner-chapas.jpg");
+	background-size: contain;
+	display: flex;
+	height: 100px;
+	justify-content: center;
 }
 .mostrador{
 	display: flex;
@@ -126,20 +95,20 @@ section{
 	flex-direction: row;
 	align-content: center;
 }
-.imgybt{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.navegador{
+	background-color: $navegador__fondo--color;
+	padding:1em;
+	a{
+		padding:1em;
+		color:$letras--color;
+		text-decoration: none;
+		&:hover{
+			background-color: white;
+		}
+	}
+	border-bottom:1px black solid ;
 }
 
-.parteizq{
-	h2{
-		font-size: 1.2em;
-	}
-	li{
-		margin-left: 2em;
-	}
-}
 .partederecha{
 	margin-right: 20%;
 	img{
@@ -148,9 +117,40 @@ section{
 		
 	}
 }
+.parteizq{
+	h2{
+		font-size: 1.2em;
+	}
+	li{
+		margin-left: 2em;
+	}
+}
 
+.redes{
+	a{
+		font-size: 1.5em;
+		color: white;
+	}
+}
 
-.imagenPrecio{
+section{
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	h2{
+		text-align: center;
+	}
+	img{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+.tipo{
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	p{
+		text-align: left;
+		width: 200px;
+	}
 }
