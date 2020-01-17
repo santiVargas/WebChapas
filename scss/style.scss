@@ -1,73 +1,73 @@
 @import "componentes/variables";
 
+/* Comentarios acerca del CSS
+- Todas las etiquetas están ordenadas por orden alfabético
+*/
 
 body{
-	background:$color--blanco;
-	color:$color--letras;
+	background:$fondo--color;
+	color:$letras--color;
 	margin-right: auto;
-    margin-left: auto;
-	width: 100%;
+	margin-left: auto;
+}
+
+.catalogo{
+	h2{
+		border: black solid 2px;
+		border-radius: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 20%;
+	}
 }
 
 header{
 	text-align: center;
 	width: 100%;
-	.logo{
-		align-items: center;
-		background-image: url("../img/banner-chapas.jpg");
-		background-size: contain;
-		display: flex;
-		height: 100px;
-   		justify-content: center;
-	}
-	.navegador{
-		width: 100%;
-		background-color: grey;
-		a{
-			color:$color--letras;
-			padding: 10px;
-		}
+}
+
+.imagen{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 5%;
+	p{
+		width: 70%;
 	}
 }
 
+.logo{
+	align-items: center;
+	background-image: url("../img/banner-chapas.jpg");
+	background-size: contain;
+	display: flex;
+	height: 100px;
+	justify-content: center;
+}
 
-
-.descripcion{
-	.imagen{
-		align-items: center;
-		display: flex;
-		justify-content: space-between;
-		padding: 5%;
-		p{
-			width: 70%;
-		}
+.navegador{
+	width: 100%;
+	background-color: $navegador__fondo--color;
+	a{
+		color:$letras--color;
+		padding: 10px;
 	}
 }
-.catalogo{
-	h2{
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		border: black solid 2px;
-		border-radius: 5px;
-		width: 20%;
-	}
-	.tipos{
-		.tipo{
-			display: flex;
-			justify-content: space-evenly;
-			align-items: center;
-			p{
-				width: 200px;
-				text-align: left;
-			}
-		}
+
+.tipo{
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	p{
+		text-align: left;
+		width: 200px;
 	}
 }
 
 footer{
-	background-color: $color--fondo;
-	color: $color--letras;
+	background-color: $fondo--color;
+	color:$letras--color;
 	display: flex;
 	justify-content: space-around;
 	font-weight: bold;
@@ -77,8 +77,8 @@ footer{
 		width: 200px;
 	}
 	a{
+		color:$letras--color;
 		display: block;
-		color: $color--letras;
 		font-weight: bold;
 		padding: 10px;
 	}

@@ -5,20 +5,13 @@ var pug = require('gulp-pug2');
 // var jade = require('gulp-jade');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
-var minifyCSS = require('gulp-minify-css')
 sass.compiler = require('node-sass');
-
 
 // Crear tarea
 
 gulp.task('sass', function () {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      cascade: false
-    }))
-    .pipe(minifyCSS())
-//  .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./css/'))
     .pipe(browserSync.stream());
 });
