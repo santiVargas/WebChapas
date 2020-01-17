@@ -1,0 +1,22 @@
+https://aprende-web.net/javascript/js14_1.php
+
+*Cerveza . -> pag, añadir 2 mas pags.
+*Te doy la chapa->web libre para renta y difusion de chapitas (pines)
+
+config.varibles
+
+-var paginas =['inicio','cereza','datos']
+
+templace
+	include config.variables
+
+block config
+	pag="inicio" pag=1 <--Esto es un array
+extends template
+
+Usted esta en #{pagina[pag]}
+
+
+svarmor829
+
+sudo npm install gulp-minify-css -g
