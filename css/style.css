@@ -15,12 +15,12 @@ h1 {
   font-size: 3em;
   opacity: 0.8; }
 
-h2 {
+h2, h3 {
   border: black solid 1px;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em 0.2em;
+  padding: 0.2em 2em;
   text-align: center;
   width: 20%;
   font-size: 1.2em;
@@ -84,11 +84,12 @@ header {
   justify-content: space-between;
   padding: 5%; }
   .imagen p {
-    width: 70%; }
+    width: 80%; }
 
 .imagenPrecio {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .logo {
   align-items: center;
@@ -134,22 +135,25 @@ header {
 .partederecha {
   display: flex;
   flex-direction: column;
-  width: 70%; }
+  margin-right: 2%;
+  text-align: center;
+  width: 80%; }
+  .partederecha h3 {
+    width: auto;
+    padding: 0.2em 2em; }
+  .partederecha li {
+    margin-left: 2em; }
 
 .precios {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .precios li:first-child {
+  .precios li {
     list-style: none; }
 
 .parteizq {
+  margin-left: 2%;
   width: 15%; }
-  .parteizq h2 {
-    width: auto;
-    padding: 2em 0.2em; }
-  .parteizq li {
-    margin-left: 2em; }
 
 section {
   display: flex;
