@@ -104,7 +104,8 @@ header {
 .imagenPrecio {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border: 1px solid #393d42; }
 
 .logo {
   align-items: center;
@@ -140,6 +141,10 @@ header {
     padding: 1em;
     color: #1A1A1A;
     text-decoration: none; }
+    .navegador a:link {
+      background-color: #9c9c9c; }
+    .navegador a:visited {
+      background-color: #dcdcdc; }
     .navegador a:hover {
       background-color: #ffffff; }
 
@@ -152,17 +157,19 @@ header {
   .partederecha h3 {
     width: auto;
     padding: 0.2em 2em; }
-  .partederecha li {
-    margin-left: 2em; }
 
 .precios {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
-  .precios ul:first-child {
-    list-style: disc; }
-  .precios ul li {
+  justify-content: space-between;
+  border: 1px solid #393d42; }
+  .precios ul {
     list-style: none; }
+    .precios ul:first-child {
+      list-style: disc;
+      text-align: left; }
+    .precios ul li:first-child {
+      list-style: none; }
 
 .parteizq {
   margin-left: 2%;

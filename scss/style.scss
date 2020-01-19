@@ -123,6 +123,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border: 1px solid $borde__imagen--color;
 }
 
 .logo{
@@ -164,10 +165,17 @@ header{
 		padding:1em;
 		color:$letras--color;
 		text-decoration: none;
+		&:link{
+			background-color: $navegador__fondo--color;
+		}
+		&:visited{
+			background-color: $fondo3--color;
+		}
 		&:hover{
 			background-color: $fondo--color;
 		}
 	}
+	
 }
 
 .partederecha{
@@ -180,19 +188,20 @@ header{
 		width: auto;
 		padding: 0.2em 2em;
 	}
-	li{
-		margin-left: 2em;
-	}
+	
 }
 .precios{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	border: 1px solid $borde__imagen--color;
 	ul{
 		&:first-child{
 			list-style: disc;
+			text-align: left;
 		}
-		li{
+		list-style: none;
+		li:first-child{
 			list-style: none;
 		}
 	}
