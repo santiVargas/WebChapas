@@ -66,6 +66,9 @@ footer{
 }
 .info{
 	width: auto;
+	p {
+		color: $letras__footer--color;
+	}
 	a{
 		display: block;
 		color: $letras__footer--color;
@@ -78,6 +81,9 @@ footer{
 .redes{
 	text-align: center;
 	width: auto;
+	p {
+		color: $letras__footer--color;
+	}
 	a{
 		font-size: 1.5em;
 		color: $letras__footer--color;

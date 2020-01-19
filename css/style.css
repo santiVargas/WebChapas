@@ -59,6 +59,8 @@ footer {
 
 .info {
   width: auto; }
+  .info p {
+    color: #ffffff; }
   .info a {
     display: block;
     color: #ffffff; }
@@ -68,6 +70,8 @@ footer {
 .redes {
   text-align: center;
   width: auto; }
+  .redes p {
+    color: #ffffff; }
   .redes a {
     font-size: 1.5em;
     color: #ffffff; }
