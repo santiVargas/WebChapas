@@ -72,7 +72,7 @@ footer{
 		display: block;
 		color: white;
 		&:hover {
-			color: goldenrod;
+			color: $fondo__alternativo--color;
 		}
 	}
 
@@ -84,7 +84,7 @@ footer{
 		font-size: 1.5em;
 		color: white;
 		&:hover {
-			background: goldenrod;
+			background: $fondo__alternativo--color;
 			border-radius: 5px;
 		}
 	}
