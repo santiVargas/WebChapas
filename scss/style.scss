@@ -159,14 +159,28 @@ header{
 }
 
 .partederecha{
-	margin-right: 20%;
-	img{
-		width: 500px;
-		height: 250px;
-		
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+.precios{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	ul{
+		li{
+			&:first-child{
+				list-style: none;
+			}
+		}
 	}
 }
 .parteizq{
+	width: 15%;
+	h2 {
+		width: auto;
+		padding: 2em 0.2em;
+	}
 	li{
 		margin-left: 2em;
 	}

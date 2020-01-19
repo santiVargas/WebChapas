@@ -133,13 +133,24 @@ header {
       background-color: white; }
 
 .partederecha {
-  margin-right: 20%; }
-  .partederecha img {
-    width: 500px;
-    height: 250px; }
+  display: flex;
+  flex-direction: column;
+  width: 70%; }
 
-.parteizq li {
-  margin-left: 2em; }
+.precios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .precios ul li:first-child {
+    list-style: none; }
+
+.parteizq {
+  width: 15%; }
+  .parteizq h2 {
+    width: auto;
+    padding: 2em 0.2em; }
+  .parteizq li {
+    margin-left: 2em; }
 
 section {
   display: flex;
