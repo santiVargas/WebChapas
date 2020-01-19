@@ -22,18 +22,16 @@ h2 {
 	border-radius: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0.2em 2em 0.2em;
+	padding: 2em 0.2em;
 	text-align: center;
 	width: 20%;
 	font-size: 1.2em;
-	text-align: center;
-	background-color: gainsboro;
+	background-color: $fondo3--color;
 }
 
 
 footer{
 	background-color: $navegador__fondo--color;
-	color:$letras--color;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -43,7 +41,7 @@ footer{
 	padding-top: 1em;
 	padding-bottom: 1em;
 	p{
-		color: white;
+		color: $letras__footer--color;
 		font-size: 1em;
 	}
 	a{
@@ -70,7 +68,7 @@ footer{
 	width: auto;
 	a{
 		display: block;
-		color: white;
+		color: $letras__footer--color;
 		&:hover {
 			color: $fondo__alternativo--color;
 		}
@@ -82,7 +80,7 @@ footer{
 	width: auto;
 	a{
 		font-size: 1.5em;
-		color: white;
+		color: $letras__footer--color;
 		&:hover {
 			background: $fondo__alternativo--color;
 			border-radius: 5px;
@@ -124,7 +122,7 @@ header{
 	justify-content: space-around;
 	flex-direction: row;
 	align-content: center;
-	background-color: gainsboro;
+	background-color: $fondo3--color;
 	padding: 1em;
 	border-top: 2px solid $fondo__alternativo--color;
 	border-bottom: 2px solid $fondo__alternativo--color;
@@ -135,10 +133,11 @@ header{
 	flex-direction: column;
 	align-items: center;
 	img {
-		border-top: 2px solid gray;
-		border-right: 3px solid gray;
-		border-left: 1px solid gray;
-		border-bottom: 1px solid gray;
+		border: solid $borde__imagen--color;
+		border-top: 2px ;
+		border-right: 3px ;
+		border-left: 1px ;
+		border-bottom: 1px ;
 		margin-bottom: 0.8em;
 	}
 	
@@ -153,7 +152,7 @@ header{
 		color:$letras--color;
 		text-decoration: none;
 		&:hover{
-			background-color: white;
+			background-color: $fondo--color;
 		}
 	}
 }

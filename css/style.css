@@ -20,16 +20,14 @@ h2 {
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.2em 2em 0.2em;
+  padding: 2em 0.2em;
   text-align: center;
   width: 20%;
   font-size: 1.2em;
-  text-align: center;
-  background-color: gainsboro; }
+  background-color: #dcdcdc; }
 
 footer {
   background-color: #9c9c9c;
-  color: #1A1A1A;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -39,7 +37,7 @@ footer {
   padding-top: 1em;
   padding-bottom: 1em; }
   footer p {
-    color: white;
+    color: #ffffff;
     font-size: 1em; }
   footer a {
     color: #1A1A1A;
@@ -63,18 +61,18 @@ footer {
   width: auto; }
   .info a {
     display: block;
-    color: white; }
+    color: #ffffff; }
     .info a:hover {
-      color: #4efbbb; }
+      color: #feec80; }
 
 .redes {
   text-align: center;
   width: auto; }
   .redes a {
     font-size: 1.5em;
-    color: white; }
+    color: #ffffff; }
     .redes a:hover {
-      background: #4efbbb;
+      background: #feec80;
       border-radius: 5px; }
 
 header {
@@ -105,20 +103,21 @@ header {
   justify-content: space-around;
   flex-direction: row;
   align-content: center;
-  background-color: gainsboro;
+  background-color: #dcdcdc;
   padding: 1em;
-  border-top: 2px solid #4efbbb;
-  border-bottom: 2px solid #4efbbb; }
+  border-top: 2px solid #feec80;
+  border-bottom: 2px solid #feec80; }
 
 .imgybt {
   display: flex;
   flex-direction: column;
   align-items: center; }
   .imgybt img {
-    border-top: 2px solid gray;
-    border-right: 3px solid gray;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border: solid #808080;
+    border-top: 2px;
+    border-right: 3px;
+    border-left: 1px;
+    border-bottom: 1px;
     margin-bottom: 0.8em; }
 
 .navegador {
@@ -130,7 +129,7 @@ header {
     color: #1A1A1A;
     text-decoration: none; }
     .navegador a:hover {
-      background-color: white; }
+      background-color: #ffffff; }
 
 .partederecha {
   display: flex;
