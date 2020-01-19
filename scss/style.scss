@@ -83,10 +83,10 @@ footer{
 	a{
 		font-size: 1.5em;
 		color: white;
-	}
-	a:hover {
-		background: goldenrod;
-		border-radius: 5px;
+		&:hover {
+			background: goldenrod;
+			border-radius: 5px;
+		}
 	}
 }
 
@@ -112,7 +112,7 @@ header{
 
 .logo{
 	align-items: center;
-	background-image: url("../img/banner-chapas.jpg");
+	background-image: url("../img/FondoHeader.png");
 	background-size: contain;
 	display: flex;
 	height: 100px;
@@ -147,6 +147,7 @@ header{
 .navegador{
 	background-color: $navegador__fondo--color;
 	padding:1em;
+	border-bottom:1px black solid ;
 	a{
 		padding:1em;
 		color:$letras--color;
@@ -155,7 +156,6 @@ header{
 			background-color: white;
 		}
 	}
-	border-bottom:1px black solid ;
 }
 
 .partederecha{
@@ -167,11 +167,9 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	ul{
-		li{
-			&:first-child{
-				list-style: none;
-			}
+	li{
+		&:first-child{
+			list-style: none;
 		}
 	}
 }
