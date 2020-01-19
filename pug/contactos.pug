@@ -2,11 +2,58 @@ extends template/template.pug
             
 block contactos
     h2 Contacto
-    .formularioPedido
-        h3 ENVIANOS TU PEDIDO
-        form(action="#", method="post")
-            fieldset Datos Personales:
-            legend:
-                label(for="nombreForm")
-    .datosContacto
+    .contactos
+        .formularioPedido
+            h3 ENVÍANOS TU PEDIDO
+            form(action="#", method="post")
+                fieldset
+                    legend Datos del pedido:
+                    .filaForm
+                        label(for="lblNombre") Nombre:
+                        input(type="text", name="txtNombre")
+                    .filaForm
+                        label(for="lblApellidos") Apellidos:
+                        input(type="text", name="txtApellidos")
+                    .filaForm
+                        label(for="lblApellidos") Email:
+                        input(type="text", name="txtEmail")
+                    .filaForm
+                        label(for="lblApellidos") Nif:
+                        input(type="text", name="txtNif")
+                    .filaForm
+                        label(for="lblTfl1") Tlf1: 
+                        input(type="text", name="txtTlf1")
+                        label(for="lblTlf2") Tlf2:
+                        input(type="text", name="txtTlf2") 
+                    .filaForm
+                        label(for="lblLocalidad") Localidad:
+                        input(type="text", name="txtLocalidad")
+                        label(for="lblProvincia") Provincia:
+                        select(name="slcProvincia")
+                            option(value="Default") Elige una provincia
+                            option(value="JAÉN") JAÉN
+                            option(value="GRANADA") GRANADA
+                    .filaForm
+                        label(for="lblAsunto") Dirección:
+                        input(type="text", name="txtDireccion")
+                    .filaForm
+                        label(for="lblAsunto") Asunto:
+                        input(type="text", name="txtAsunto")
+                    .filaForm
+                        label(for="lblAsunto") Pedido:
+                        textarea(name="txtareaPedido")                      
+        .datosContacto
+            h3 CONTACTO:
+            ul
+                li Email: chapaschapitas@gmail.es
+                li Tlf: +34 953 60 60 60 
+            h3 DIRECCIÓN:
+            p Oficina:
+            ul
+                li Linares (Jaén)
+                li Calle Santa Engracia nº5
+            p Frábrica:
+            ul
+                li La Carolina (Jaén)
+                li Calle Perequito Mechor nº7
     

@@ -17,7 +17,7 @@ h1 {
 	font-size: 3em;
 	opacity: 0.8;
 }
-h2, h3{
+h2{
 	border: black solid 1px;
 	border-radius: 5px;
 	margin-left: auto;
@@ -27,8 +27,18 @@ h2, h3{
 	width: 20%;
 	font-size: 1.2em;
 	background-color: $fondo3--color;
+	font-family: sans-serif;
 }
-
+h3 {
+	background-color: $fondo__alternativo--color;
+	display: inline-block;
+	padding: 0.2em 2em 0.2em;
+	color: $letraContactoH2;
+	border-radius: 10px;
+	font-family: sans-serif;
+	border-bottom: 1px solid green;
+	border-right: 1px solid green;
+}
 
 footer{
 	background-color: $navegador__fondo--color;
@@ -210,6 +220,22 @@ section{
 		width: 200px;
 	}
 }
+
+.contactos {
+	
+	display: flex;
+	justify-content: space-around;
+}
+.formularioPedido {
+	width: 60%;
+}
+.filaForm {
+
+}
+.datosContacto {
+	width: 40%;
+}
+
 
 @media screen and (max-width: 500px){
 	.logoPolitica, .info, .redes, p {
