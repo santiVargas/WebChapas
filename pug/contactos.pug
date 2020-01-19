@@ -14,18 +14,20 @@ block contactos
                         input(type="text", name="txtNombre")
                     .filaForm
                         label(for="lblApellidos") Apellidos:
-                        input(type="text", name="txtApellidos")
+                        input(type="text", name="txtApellidos", id="txtApellidosID")
                     .filaForm
-                        label(for="lblApellidos") Email:
-                        input(type="text", name="txtEmail")
+                        label(for="lblEmail") Email:
+                        input(type="text", name="txtEmail", id="txtEmailID")
                     .filaForm
-                        label(for="lblApellidos") Nif:
-                        input(type="text", name="txtNif")
+                        label(for="lblNif") Nif:
+                        input(type="text", name="txtNif", id="txtNifID")
                     .filaForm
-                        label(for="lblTfl1") Tlf1: 
-                        input(type="text", name="txtTlf1")
-                        label(for="lblTlf2") Tlf2:
-                        input(type="text", name="txtTlf2") 
+                        .filaForm
+                            label(for="lblTfl1") Tlf1: 
+                            input(type="text", name="txtTlf1", id="txtTlf1ID")
+                        .filaForm
+                            label(for="lblTlf2") Tlf2:
+                            input(type="text", name="txtTlf2", id="txtTlf2ID")
                     .filaForm
                         label(for="lblLocalidad") Localidad:
                         input(type="text", name="txtLocalidad")
@@ -35,13 +37,13 @@ block contactos
                             option(value="JAÉN") JAÉN
                             option(value="GRANADA") GRANADA
                     .filaForm
-                        label(for="lblAsunto") Dirección:
-                        input(type="text", name="txtDireccion")
+                        label(for="lblDireccion") Dirección:
+                        input(type="text", name="txtDireccion", id="txtDireccionID")
                     .filaForm
                         label(for="lblAsunto") Asunto:
-                        input(type="text", name="txtAsunto")
+                        input(type="text", name="txtAsunto", id="txtAsuntoID")
                     .filaForm
-                        label(for="lblAsunto") Pedido:
+                        label(for="lblPedido") Pedido:
                         textarea(name="txtareaPedido")                      
         .datosContacto
             h3 CONTACTO:
@@ -53,7 +55,7 @@ block contactos
             ul
                 li Linares (Jaén)
                 li Calle Santa Engracia nº5
-            p Frábrica:
+            p Fábrica:
             ul
                 li La Carolina (Jaén)
                 li Calle Perequito Mechor nº7
