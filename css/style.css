@@ -114,11 +114,7 @@ header {
   flex-direction: column;
   align-items: center; }
   .imgybt img {
-    border: solid #808080;
-    border-top: 2px;
-    border-right: 3px;
-    border-left: 1px;
-    border-bottom: 1px;
+    border: 2px solid #393d42;
     margin-bottom: 0.8em; }
 
 .navegador {
@@ -148,7 +144,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .precios li {
+  .precios ul:first-child {
+    list-style: disc; }
+  .precios ul li {
     list-style: none; }
 
 .parteizq {
