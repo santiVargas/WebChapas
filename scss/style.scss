@@ -70,7 +70,7 @@ footer{
 		display: block;
 		color: $letras__footer--color;
 		&:hover {
-			color: goldenrod;
+			color: $fondo__alternativo--color;
 		}
 	}
 
@@ -82,7 +82,7 @@ footer{
 		font-size: 1.5em;
 		color: $letras__footer--color;
 		&:hover {
-			background: goldenrod;
+			background: $fondo__alternativo--color;
 			border-radius: 5px;
 		}
 	}

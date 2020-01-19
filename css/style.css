@@ -63,7 +63,7 @@ footer {
     display: block;
     color: #ffffff; }
     .info a:hover {
-      color: goldenrod; }
+      color: #feec80; }
 
 .redes {
   text-align: center;
@@ -72,7 +72,7 @@ footer {
     font-size: 1.5em;
     color: #ffffff; }
     .redes a:hover {
-      background: goldenrod;
+      background: #feec80;
       border-radius: 5px; }
 
 header {
