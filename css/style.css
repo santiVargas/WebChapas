@@ -16,54 +16,53 @@ h1 {
   opacity: 0.8; }
 
 h2 {
+  background-color: gainsboro;
   border: black solid 1px;
   border-radius: 5px;
+  font-size: 1.2em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.2em 2em 0.2em;
+  padding: 2em 0.2em;
   text-align: center;
-  width: 20%;
-  font-size: 1.2em;
-  text-align: center;
-  background-color: gainsboro; }
+  width: 20%; }
 
 footer {
   background-color: #9c9c9c;
+  border-top: 1px solid;
   color: #1A1A1A;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   font-weight: bold;
-  border-top: 1px solid;
+  justify-content: space-around;
   padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  width: 100%; }
+  footer a {
+    color: #1A1A1A;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0.2em;
+    text-decoration: none; }
   footer p {
     color: white;
     font-size: 1em; }
-  footer a {
-    color: #1A1A1A;
-    font-weight: bold;
-    padding: 0.2em;
-    text-decoration: none;
-    font-size: 0.8em; }
 
 .logoPolitica {
-  width: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap; }
+  width: auto; }
   .logoPolitica img {
-    width: 150px;
-    height: 75px;
     border-radius: 15px;
-    padding: 1em 0.5em 0.5em 1em; }
+    height: 75px;
+    padding: 1em 0.5em 0.5em 1em;
+    width: 150px; }
 
 .info {
   width: auto; }
   .info a {
-    display: block;
-    color: white; }
+    color: white;
+    display: block; }
     .info a:hover {
       color: goldenrod; }
 
@@ -71,11 +70,11 @@ footer {
   text-align: center;
   width: auto; }
   .redes a {
-    font-size: 1.5em;
-    color: white; }
-  .redes a:hover {
-    background: goldenrod;
-    border-radius: 5px; }
+    color: white;
+    font-size: 1.5em; }
+    .redes a:hover {
+      background: goldenrod;
+      border-radius: 5px; }
 
 header {
   text-align: center; }
@@ -94,40 +93,40 @@ header {
 
 .logo {
   align-items: center;
-  background-image: url("../img/banner-chapas.jpg");
+  background-image: url("../img/FondoHeader.png");
   background-size: contain;
   display: flex;
   height: 100px;
   justify-content: center; }
 
 .mostrador {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
   align-content: center;
   background-color: gainsboro;
-  padding: 1em;
+  border-bottom: 2px solid #feec80;
   border-top: 2px solid #feec80;
-  border-bottom: 2px solid #feec80; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em; }
 
 .imgybt {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   .imgybt img {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
     border-top: 2px solid gray;
     border-right: 3px solid gray;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
     margin-bottom: 0.8em; }
 
 .navegador {
+  border-bottom: 1px black solid;
   background-color: #9c9c9c;
-  padding: 1em;
-  border-bottom: 1px black solid; }
+  padding: 1em; }
   .navegador a {
-    padding: 1em;
     color: #1A1A1A;
+    padding: 1em;
     text-decoration: none; }
     .navegador a:hover {
       background-color: white; }
@@ -141,14 +140,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .precios ul li:first-child {
+  .precios li:first-child {
     list-style: none; }
 
 .parteizq {
   width: 15%; }
   .parteizq h2 {
-    width: auto;
-    padding: 2em 0.2em; }
+    padding: 2em 0.2em;
+    width: auto; }
   .parteizq li {
     margin-left: 2em; }
 
@@ -156,8 +155,8 @@ section {
   display: flex;
   flex-direction: column; }
   section img {
-    width: 200px;
-    height: 200px; }
+    height: 200px;
+    width: 200px; }
 
 .tipo {
   align-items: center;
@@ -169,10 +168,10 @@ section {
 
 @media screen and (max-width: 500px) {
   .logoPolitica, .info, .redes, p {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap; }
+    width: 100%; }
   .info a {
-    width: 100%;
-    text-align: center; } }
+    text-align: center;
+    width: 100%; } }
