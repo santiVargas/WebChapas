@@ -37,7 +37,7 @@ footer {
   padding-top: 1em;
   padding-bottom: 1em; }
   footer p {
-    color: #ffffff;
+    color: #4efbbb;
     font-size: 1em; }
   footer a {
     color: #1A1A1A;
@@ -59,20 +59,24 @@ footer {
 
 .info {
   width: auto; }
+  .info p {
+    color: #ffffff; }
   .info a {
     display: block;
     color: #ffffff; }
     .info a:hover {
-      color: #feec80; }
+      color: #4efbbb; }
 
 .redes {
   text-align: center;
   width: auto; }
+  .redes p {
+    color: #ffffff; }
   .redes a {
     font-size: 1.5em;
     color: #ffffff; }
     .redes a:hover {
-      background: #feec80;
+      background: #4efbbb;
       border-radius: 5px; }
 
 header {
@@ -106,8 +110,8 @@ header {
   align-content: center;
   background-color: #dcdcdc;
   padding: 1em;
-  border-top: 2px solid #feec80;
-  border-bottom: 2px solid #feec80; }
+  border-top: 2px solid #4efbbb;
+  border-bottom: 2px solid #4efbbb; }
 
 .imgybt {
   display: flex;
