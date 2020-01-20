@@ -57,6 +57,12 @@ footer {
     text-decoration: none;
     font-size: 0.8em; }
 
+.visor {
+  border-top: 1px solid #393d42;
+  border-bottom: 1px solid #393d42;
+  display: flex;
+  justify-content: space-evenly; }
+
 .logoPolitica {
   width: auto;
   display: flex;
@@ -114,6 +120,9 @@ header {
   display: flex;
   height: 100px;
   justify-content: center; }
+  .logo a {
+    text-decoration: none;
+    color: #1A1A1A; }
 
 .mostrador {
   display: flex;
@@ -161,8 +170,7 @@ header {
 .precios {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid #393d42; }
+  justify-content: space-between; }
   .precios ul {
     list-style: none; }
     .precios ul:first-child {
