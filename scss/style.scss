@@ -20,11 +20,11 @@ h1 {
 h2{
 	border: black solid 1px;
 	border-radius: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 1em;
+	margin-right: 1em;
 	padding: 0.2em 2em;
 	text-align: center;
-	width: 20%;
+	width: auto;
 	font-size: 1.2em;
 	background-color: $fondo3--color;
 	font-family: sans-serif;
@@ -112,18 +112,13 @@ header{
 .imagen{
 	align-items: center;
 	display: flex;
-	justify-content: space-between;
-	padding: 5%;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1em;
 	p{
 		width: 80%;
+		margin-left: 1em;
 	}
-}
-
-.imagenPrecio{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border: 1px solid $borde__imagen--color;
 }
 
 .logo{
@@ -138,12 +133,16 @@ header{
 .mostrador{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-content: center;
 	background-color: $fondo3--color;
 	padding: 1em;
 	border-top: 2px solid $fondo__alternativo--color;
 	border-bottom: 2px solid $fondo__alternativo--color;
+	img {
+		margin-top: 0.5em;
+	}
 
 }
 .imgybt{
@@ -178,10 +177,21 @@ header{
 	
 }
 
+.imagenPrecio{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	border: 1px solid $borde__imagen--color;
+}
+.parteizq{
+	margin-left: 1em;
+	width: 15%;
+}
 .partederecha{
 	display: flex;
 	flex-direction: column;
-	margin-right: 2%;
+	margin-right: 1em;
 	text-align: center;
 	width: 80%;
 	h3 {
@@ -206,10 +216,6 @@ header{
 		}
 	}
 }
-.parteizq{
-	margin-left: 2%;
-	width: 15%;
-}
 
 section{
 	display: flex;
@@ -224,6 +230,7 @@ section{
 	align-items: center;
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	p{
 		text-align: left;
 		width: 200px;
@@ -293,6 +300,15 @@ section{
 
 
 @media screen and (max-width: 500px){
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 1em;
+		width: auto;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 	.logoPolitica, .info, .redes, p {
 		width: 100%;
 		display: flex;
@@ -303,6 +319,12 @@ section{
 		a {
 			width: 100%;
 			text-align: center;
+		}
+	}
+	.navegador {
+		padding: 0.5em;
+		a {
+			padding: 0.5em;
 		}
 	}
 }
