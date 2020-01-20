@@ -18,11 +18,11 @@ h1 {
 h2 {
   border: black solid 1px;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1em;
+  margin-right: 1em;
   padding: 0.2em 2em;
   text-align: center;
-  width: 20%;
+  width: auto;
   font-size: 1.2em;
   background-color: #dcdcdc;
   font-family: sans-serif; }
@@ -102,16 +102,12 @@ header {
 .imagen {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  padding: 5%; }
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em; }
   .imagen p {
-    width: 80%; }
-
-.imagenPrecio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #393d42; }
+    width: 80%;
+    margin-left: 1em; }
 
 .logo {
   align-items: center;
@@ -127,12 +123,15 @@ header {
 .mostrador {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
   background-color: #dcdcdc;
   padding: 1em;
   border-top: 2px solid #4efbbb;
   border-bottom: 2px solid #4efbbb; }
+  .mostrador img {
+    margin-top: 0.5em; }
 
 .imgybt {
   display: flex;
@@ -157,10 +156,21 @@ header {
     .navegador a:hover {
       background-color: #ffffff; }
 
+.imagenPrecio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #393d42; }
+
+.parteizq {
+  margin-left: 1em;
+  width: 15%; }
+
 .partederecha {
   display: flex;
   flex-direction: column;
-  margin-right: 2%;
+  margin-right: 1em;
   text-align: center;
   width: 80%; }
   .partederecha h3 {
@@ -179,10 +189,6 @@ header {
     .precios ul li:first-child {
       list-style: none; }
 
-.parteizq {
-  margin-left: 2%;
-  width: 15%; }
-
 section {
   display: flex;
   flex-direction: column; }
@@ -193,7 +199,8 @@ section {
 .tipo {
   align-items: center;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .tipo p {
     text-align: left;
     width: 200px; }
@@ -253,6 +260,13 @@ section {
     list-style-type: none; }
 
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.5em; }
+  h2 {
+    font-size: 1em;
+    width: auto;
+    margin-left: 1em;
+    margin-right: 1em; }
   .logoPolitica, .info, .redes, p {
     width: 100%;
     display: flex;
@@ -260,4 +274,8 @@ section {
     flex-wrap: wrap; }
   .info a {
     width: 100%;
-    text-align: center; } }
+    text-align: center; }
+  .navegador {
+    padding: 0.5em; }
+    .navegador a {
+      padding: 0.5em; } }
