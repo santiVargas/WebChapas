@@ -1,34 +1,35 @@
 extends template/template.pug
 
-block banner
-    h2 Personalizables y diseños predeterminados
-    .mostrador
-        .imgybt
-            img(src="img/chaparedonda.jpg", alt="Chapa Redonda")
-            input(type="button", value="Infórmate del precio de las chapas redondas", onClick="window.location='precios.html#tipo1'")
-        .imgybt
-            img(src="img/chapacuadrada.jpeg", alt="Chapa Cuadrada")
-            
-            input(type="button", value="Infórmate del precio de las chapas cuadradas", onClick="window.location='precios.html#tipo2'")
-        .imgybt
-            img(src="img/chapatriangular.jpeg", alt="Chapa Triangular")
-            
-            input(type="button", value="Infórmate del precio de las chapas triangulares", onClick="window.location='precios.html#tipo3'")
-        
+block seccion
+    h2 INICIO
+    .cuadro
+        img(src="img/rol1.jpg")
+        h3 BIENVENIDO A D&amp;D
+        p Dungeon20 es una herramienta web gratuita que te permite crear, gestionar y compartir tus personajes y campañas para tus partidas de Dungeons &amp; Dragons, El Resurgir del Dragón y otros juegos de rol con el sistema D20.
+        p Estaremos encantados de recibir vuestras sugerencias, consultas o peticiones a través de email o por redes sociales:
+        .contactar
+            a.icon-whatsapp(href="#")
+            a.icon-facebook(href="#")
+            a.icon-instagram(href="#")
+        p Recuerda que puedes descargar nuestra aplicación para Android desde Google Play. Próximamente también para iOS:
+        a(href="www.googleplay.com")
+            img(src="img/enlacegoogleplay.png", alt="google play")
+    .parteabajo
+        .bloque
+            img(src="", alt="")
+            p
+            p
+                a(href="http://")
+        .bloque
+            img(src="", alt="")
+            p
+            p
+                a(href="http://")
+        .bloque
+            img(src="", alt="")
+            p
+            p
+                a(href="http://")
 
-block articulo
-    article
-        .descripcion
-            .imagen
-                img(src="img/chapa.png")
-                p.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
-            .imagen
-                img(src="img/chapa.png")
-                p.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
-            .imagen
-                img(src="img/chapa.png")
-                p.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit suscipit aliquid libero excepturi reiciendis vero corporis facilis obcaecati iure.
-        
+block derecha
+    video(src="video/D.mp4", controls poster="vistaprevia.jpg") Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.

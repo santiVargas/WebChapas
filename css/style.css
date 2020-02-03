@@ -4,175 +4,75 @@
 - Todas las etiquetas están ordenadas por orden alfabético
 */
 body {
-  background: #ffffff;
-  color: #1A1A1A;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0; }
-
-h1 {
-  font-size: 3em;
-  opacity: 0.8; }
-
-h2 {
-  border: black solid 1px;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.2em 2em 0.2em;
-  text-align: center;
-  width: 20%;
-  font-size: 1.2em;
-  text-align: center;
-  background-color: gainsboro; }
-
-footer {
-  background-color: #9c9c9c;
-  color: #1A1A1A;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  font-weight: bold;
-  border-top: 1px solid;
-  padding-top: 1em;
-  padding-bottom: 1em; }
-  footer p {
-    color: white;
-    font-size: 1em; }
-  footer a {
-    color: #1A1A1A;
-    font-weight: bold;
-    padding: 0.2em;
-    text-decoration: none;
-    font-size: 0.8em; }
-
-.logoPolitica {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-  .logoPolitica img {
-    width: 150px;
-    height: 75px;
-    border-radius: 15px;
-    padding: 1em 0.5em 0.5em 1em; }
-
-.info {
-  width: auto; }
-  .info a {
-    display: block;
-    color: white; }
-    .info a:hover {
-      color: goldenrod; }
-
-.redes {
-  text-align: center;
-  width: auto; }
-  .redes a {
-    font-size: 1.5em;
-    color: white; }
-    .redes a:hover {
-      background: goldenrod;
-      border-radius: 5px; }
-
-header {
-  text-align: center; }
-
-.imagen {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 5%; }
-  .imagen p {
-    width: 70%; }
-
-.imagenPrecio {
-  display: flex;
-  justify-content: space-between; }
+  margin: 0;
+  background-color: #F4F4F4; }
 
 .logo {
-  align-items: center;
-  background-image: url("../img/FondoHeader.png");
-  background-size: contain;
+  background-color: red;
   display: flex;
-  height: 100px;
-  justify-content: center; }
-
-.mostrador {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-content: center;
-  background-color: gainsboro;
-  padding: 1em;
-  border-top: 2px solid #feec80;
-  border-bottom: 2px solid #feec80; }
-
-.imgybt {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .imgybt img {
-    border-top: 2px solid gray;
-    border-right: 3px solid gray;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    margin-bottom: 0.8em; }
-
-.navegador {
-  background-color: #9c9c9c;
-  padding: 1em;
-  border-bottom: 1px black solid; }
-  .navegador a {
-    padding: 1em;
-    color: #1A1A1A;
-    text-decoration: none; }
-    .navegador a:hover {
-      background-color: white; }
+  justify-content: space-between; }
+  .logo img {
+    min-height: 100px;
+    min-width: 300px; }
+  .logo a {
+    align-self: center;
+    margin-left: 2em; }
 
 .partederecha {
-  display: flex;
-  flex-direction: column;
-  width: 70%; }
+  align-self: center;
+  margin-right: 2em; }
 
-.precios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .precios li:first-child {
-    list-style: none; }
+.menu {
+  background-color: white;
+  display: flex; }
+  .menu a {
+    padding: 0.3em 1.2em; }
+    .menu a:hover {
+      border: 1px solid black;
+      background-color: red; }
+  .menu li {
+    display: inline-block;
+    margin: 1em; }
 
-.parteizq {
-  width: 15%; }
-  .parteizq h2 {
-    width: auto;
-    padding: 0.2em 2em; }
-  .parteizq li {
-    margin-left: 2em; }
+a {
+  text-decoration: none;
+  font-size: 2em; }
 
 section {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%; }
+  section h2 {
+    font-size: 2em;
+    font-weight: normal; }
   section img {
-    width: 200px;
-    height: 200px; }
-
-.tipo {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly; }
-  .tipo p {
-    text-align: left;
-    width: 200px; }
-
-@media screen and (max-width: 500px) {
-  .logoPolitica, .info, .redes, p {
-    width: 100%;
+    width: 100%; }
+  section h3 {
+    padding-top: 1em;
+    margin: 0.5em 1em; }
+  section p {
+    font-size: 1.2em;
+    overflow-wrap: break-word;
+    margin: 0.5em 1em; }
+  section a {
+    text-align: center; }
+  section .contactar {
+    align-self: center; }
+  section .cuadro {
+    background-color: white;
+    width: 60%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-  .info a {
-    width: 100%;
-    text-align: center; } }
+    flex-direction: column; }
+
+.principal {
+  display: flex;
+  width: 70%;
+  margin: 0 auto; }
+
+aside {
+  width: 30%;
+  height: 30%; }
+  aside video {
+    width: 300px;
+    height: 300px; }

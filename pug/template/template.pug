@@ -6,43 +6,28 @@ html(lang="es")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="css/style.css")
-        title Chapas
+        title Dungeon20
     body
         header
             .logo
-                h1 Chapitas S.L.
-            nav.navegador
-                a(href="index.html").
-                    Inicio
-                a(href="chapas.html").
-                    Chapas
-                a(href="precios.html").
-                    Precios
-                a(href="contactos.html").
-                    Contactos
+                a(href="index.html").icon-home
+                img(src="img/dungeon20logo.png")
+                .partederecha
+                    a(href="www.facebook.com").icon-man
+                    a(href="www.facebook.com").icon-power
+            .menu
+                ul
+                    li
+                        a(href="index.html").icon-home Inicio
+                    li
+                        a(href="www.facebook.com").icon-facebook Mis personajes
+                    li
+                        a(href="#").icon-man Amigos
                         
-        section
-            block banner
-            block articulo
-            block catalogo
-            block precio
-
+        .principal
+            section
+                block seccion
+            aside
+                block derecha
         footer
-            .logoPolitica
-                img(src="../../img/privacidad.jpg", alt="privacidad")
-                img(src="../../img/rgpd.jpg", alt="")
-            .info
-                p.
-                    Informacion
-                a(href="#").
-                    Aviso Legal
-                a(href="#").
-                    Instrucciones para pedidos
-                a(href="../contactos.html").
-                    Contactos
-            .redes
-                p.
-                    Redes sociales
-                a(href="#").icon-facebook
-                a(href="#").icon-tumblr
-                a(href="#").icon-mail2  
+            
